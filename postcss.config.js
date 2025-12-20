@@ -14,7 +14,6 @@ ${pkg.description}
 @theme ${pkg.name}::${fileName}
 @author ${pkg.author}
 @version ${pkg.version}
-@license ${pkg.license}
 
 @auto-scaling fittingHeader,math
 @size 16:9 1920px 1080px
