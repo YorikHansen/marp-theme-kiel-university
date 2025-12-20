@@ -15,5 +15,12 @@ $cau-main: (
             'lilawhite': url(vars.$LOGO_ROOT + 'cau/norm-de/cau-norm-de-lilawhite-rgb.svg'),
             'blacklila': url(vars.$LOGO_ROOT + 'cau/norm-de/cau-norm-de-blacklila-rgb.svg'),
         ),
+        'en': (
+            'blackgrey': url(vars.$LOGO_ROOT + 'cau/norm-en/cau-norm-en-blackgrey-rgb.svg'),
+            'lilagrey': url(vars.$LOGO_ROOT + 'cau/norm-en/cau-norm-en-lilagrey-rgb.svg'),
+            'blackwhite': url(vars.$LOGO_ROOT + 'cau/norm-en/cau-norm-en-blackwhite-rgb.svg'),
+            'lilawhite': url(vars.$LOGO_ROOT + 'cau/norm-en/cau-norm-en-lilawhite-rgb.svg'),
+            'blacklila': url(vars.$LOGO_ROOT + 'cau/norm-en/cau-norm-en-blacklila-rgb.svg'),
+        ),
     ),
 );
