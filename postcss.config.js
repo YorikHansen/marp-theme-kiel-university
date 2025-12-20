@@ -7,11 +7,11 @@ const pkg = require('./package.json');
 
 
 /** Generates the banner for the CSS output */
-const generateBanner = () =>
+const generateBanner = (fileName) =>
   `
 ${pkg.description}
 
-@theme ${pkg.name}
+@theme ${pkg.name}::${fileName}
 @author ${pkg.author}
 @version ${pkg.version}
 @license ${pkg.license}
@@ -29,9 +29,8 @@ const TEMP_PATH = 'tmp/';
 const SOURCE_PATH = 'src/';
 const LOGO_ROOT = 'https://www.uni-kiel.de/ps/cgi-bin/logos/files/';
 
-module.exports = {
+module.exports = (ctx) => ({
   plugins: [
-    // require('postcss-import')(), // Enables @import in CSS
     require('postcss-normalize')(),
     require('autoprefixer'), // Adds vendor prefixes for compatibility
     require('postcss-font-magician')({
@@ -50,8 +49,8 @@ module.exports = {
       preset: 'default',
     }), // Minifies CSS
     require('postcss-banner')({
-      banner: generateBanner(),
+      banner: generateBanner(ctx.file.basename.slice(0, -4)),
       important: true, // Ensures it's not removed by minification
     }),
   ],
-};
+});

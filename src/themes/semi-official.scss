@@ -1,5 +1,5 @@
-@use 'departments/faculties' as *;
-@use 'departments/cau-main' as *;
+@use '../departments/faculties' as *;
+@use '../departments/cau-main' as *;
 @use 'sass:list';
 @use 'sass:map';
 @import "default" all; // The media query part is there to prevent SCSS from handling the default theme

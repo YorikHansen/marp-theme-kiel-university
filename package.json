@@ -8,10 +8,10 @@
   "license": "All rights reserved",
   "private": true,
   "scripts": {
-    "build": "sass --pkg-importer=node src/theme.scss | postcss -o dist/theme.css",
+    "build": "sass --pkg-importer=node src/themes:tmp | postcss tmp/*.css --dir dist",
     "watch": "npm-run-all --parallel watch:sass watch:postcss",
-    "watch:sass": "sass --pkg-importer=node --watch src/theme.scss tmp/theme.css",
-    "watch:postcss": "postcss tmp/theme.css --watch -o dist/theme.css"
+    "watch:sass": "sass --pkg-importer=node --watch src/themes:tmp",
+    "watch:postcss": "postcss tmp/*.css --watch --dir dist"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
