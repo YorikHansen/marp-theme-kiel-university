@@ -1,0 +1,22 @@
+@use 'sass:map';
+@use '../variables' as vars;
+
+$fac-law: (
+    'color': #e43117,
+    'name': (
+        'en': 'Faculty of Law',
+        'de': 'Rechtswissenschaftliche Fakultät',
+    ),
+    'logo': (
+        'de': (
+            'blackgreygrey': url(vars.$LOGO_ROOT + 'jura/rwf/norm-de/rwf-norm-de-blackgreygrey-rgb.svg'),
+            'blackgreyfaku': url(vars.$LOGO_ROOT + 'jura/rwf/norm-de/rwf-norm-de-blackgreyfaku-rgb.svg'),
+            'lilagreygrey': url(vars.$LOGO_ROOT + 'jura/rwf/norm-de/rwf-norm-de-lilagreygrey-rgb.svg'),
+            'lilagreyfaku': url(vars.$LOGO_ROOT + 'jura/rwf/norm-de/rwf-norm-de-lilagreyfaku-rgb.svg'),
+            'blackwhitegrey': url(vars.$LOGO_ROOT + 'jura/rwf/norm-de/rwf-norm-de-blackwhitegrey-rgb.svg'),
+            'blackwhitefaku': url(vars.$LOGO_ROOT + 'jura/rwf/norm-de/rwf-norm-de-blackwhitefaku-rgb.svg'),
+            'lilawhitegrey': url(vars.$LOGO_ROOT + 'jura/rwf/norm-de/rwf-norm-de-lilawhitegrey-rgb.svg'),
+            'lilawhitefaku': url(vars.$LOGO_ROOT + 'jura/rwf/norm-de/rwf-norm-de-lilawhitefaku-rgb.svg'),
+        ),
+    ),
+);

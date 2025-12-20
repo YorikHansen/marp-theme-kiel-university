@@ -1,0 +1,19 @@
+@use 'sass:map';
+@use '../variables' as vars;
+
+$cau-main: (
+    'color': #9b0a7d,
+    'name': (
+        'en': 'Kiel University',
+        'de': 'Christian-Albrechts-Universität zu Kiel',
+    ),
+    'logo': (
+        'de': (
+            'blackgrey': url(vars.$LOGO_ROOT + 'cau/norm-de/cau-norm-de-blackgrey-rgb.svg'),
+            'lilagrey': url(vars.$LOGO_ROOT + 'cau/norm-de/cau-norm-de-lilagrey-rgb.svg'),
+            'blackwhite': url(vars.$LOGO_ROOT + 'cau/norm-de/cau-norm-de-blackwhite-rgb.svg'),
+            'lilawhite': url(vars.$LOGO_ROOT + 'cau/norm-de/cau-norm-de-lilawhite-rgb.svg'),
+            'blacklila': url(vars.$LOGO_ROOT + 'cau/norm-de/cau-norm-de-blacklila-rgb.svg'),
+        ),
+    ),
+);

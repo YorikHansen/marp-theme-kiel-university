@@ -1,0 +1,22 @@
+@use 'sass:map';
+@use '../variables' as vars;
+
+$fac-phil: (
+    'color': #6aacda,
+    'name': (
+        'en': 'Faculty of Arts and Humanities',
+        'de': 'Philosophischen Fakultät',
+    ),
+    'logo': (
+        'de': (
+            'blackgreygrey': url(vars.$LOGO_ROOT + 'philfak/norm-de/philfak-norm-de-blackgreygrey-rgb.svg'),
+            'blackgreyfaku': url(vars.$LOGO_ROOT + 'philfak/norm-de/philfak-norm-de-blackgreyfaku-rgb.svg'),
+            'lilagreygrey': url(vars.$LOGO_ROOT + 'philfak/norm-de/philfak-norm-de-lilagreygrey-rgb.svg'),
+            'lilagreyfaku': url(vars.$LOGO_ROOT + 'philfak/norm-de/philfak-norm-de-lilagreyfaku-rgb.svg'),
+            'blackwhitegrey': url(vars.$LOGO_ROOT + 'philfak/norm-de/philfak-norm-de-blackwhitegrey-rgb.svg'),
+            'blackwhitefaku': url(vars.$LOGO_ROOT + 'philfak/norm-de/philfak-norm-de-blackwhitefaku-rgb.svg'),
+            'lilawhitegrey': url(vars.$LOGO_ROOT + 'philfak/norm-de/philfak-norm-de-lilawhitegrey-rgb.svg'),
+            'lilawhitefaku': url(vars.$LOGO_ROOT + 'philfak/norm-de/philfak-norm-de-lilawhitefaku-rgb.svg'),
+        ),
+    ),
+);

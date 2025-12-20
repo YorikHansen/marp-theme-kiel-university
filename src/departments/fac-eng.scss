@@ -1,0 +1,32 @@
+@use 'sass:map';
+@use '../variables' as vars;
+
+$fac-eng: (
+    'color': #003d86,
+    'name': (
+        'en': 'Faculty of Engineering',
+        'de': 'Technische Fakultät',
+    ),
+    'logo': (
+        'en': (
+            'blackgreygrey': url(vars.$LOGO_ROOT + 'tech/norm-en/tf-norm-en-blackgreygrey-rgb.svg'),
+            'blackgreyfaku': url(vars.$LOGO_ROOT + 'tech/norm-en/tf-norm-en-blackgreyfaku-rgb.svg'),
+            'lilagreygrey': url(vars.$LOGO_ROOT + 'tech/norm-en/tf-norm-en-lilagreygrey-rgb.svg'),
+            'lilagreyfaku': url(vars.$LOGO_ROOT + 'tech/norm-en/tf-norm-en-lilagreyfaku-rgb.svg'),
+            'blackwhitegrey': url(vars.$LOGO_ROOT + 'tech/norm-en/tf-norm-en-blackwhitegrey-rgb.svg'),
+            'blackwhitefaku': url(vars.$LOGO_ROOT + 'tech/norm-en/tf-norm-en-blackwhitefaku-rgb.svg'),
+            'lilawhitegrey': url(vars.$LOGO_ROOT + 'tech/norm-en/tf-norm-en-lilawhitegrey-rgb.svg'),
+            'lilawhitefaku': url(vars.$LOGO_ROOT + 'tech/norm-en/tf-norm-en-lilawhitefaku-rgb.svg'),
+        ),
+        'de': (
+            'blackgreygrey': url(vars.$LOGO_ROOT + 'tech/norm-de/tf-norm-de-blackgreygrey-rgb.svg'),
+            'blackgreyfaku': url(vars.$LOGO_ROOT + 'tech/norm-de/tf-norm-de-blackgreyfaku-rgb.svg'),
+            'lilagreygrey': url(vars.$LOGO_ROOT + 'tech/norm-de/tf-norm-de-lilagreygrey-rgb.svg'),
+            'lilagreyfaku': url(vars.$LOGO_ROOT + 'tech/norm-de/tf-norm-de-lilagreyfaku-rgb.svg'),
+            'blackwhitegrey': url(vars.$LOGO_ROOT + 'tech/norm-de/tf-norm-de-blackwhitegrey-rgb.svg'),
+            'blackwhitefaku': url(vars.$LOGO_ROOT + 'tech/norm-de/tf-norm-de-blackwhitefaku-rgb.svg'),
+            'lilawhitegrey': url(vars.$LOGO_ROOT + 'tech/norm-de/tf-norm-de-lilawhitegrey-rgb.svg'),
+            'lilawhitefaku': url(vars.$LOGO_ROOT + 'tech/norm-de/tf-norm-de-lilawhitefaku-rgb.svg'),
+        ),
+    ),
+);

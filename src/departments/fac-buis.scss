@@ -1,0 +1,22 @@
+@use 'sass:map';
+@use '../variables' as vars;
+
+$fac-buis: (
+    'color': #00677c,
+    'name': (
+        'en': 'Faculty of Business, Economics and Social Sciences',
+        'de': 'Wirtschafts- und Sozialwissenschaftliche Fakultät',
+    ),
+    'logo': (
+        'de': (
+            'blackgreygrey': url(vars.$LOGO_ROOT + 'wiso/norm-de/wiso-norm-de-blackgreygrey-rgb.svg'),
+            'blackgreyfaku': url(vars.$LOGO_ROOT + 'wiso/norm-de/wiso-norm-de-blackgreyfaku-rgb.svg'),
+            'lilagreygrey': url(vars.$LOGO_ROOT + 'wiso/norm-de/wiso-norm-de-lilagreygrey-rgb.svg'),
+            'lilagreyfaku': url(vars.$LOGO_ROOT + 'wiso/norm-de/wiso-norm-de-lilagreyfaku-rgb.svg'),
+            'blackwhitegrey': url(vars.$LOGO_ROOT + 'wiso/norm-de/wiso-norm-de-blackwhitegrey-rgb.svg'),
+            'blackwhitefaku': url(vars.$LOGO_ROOT + 'wiso/norm-de/wiso-norm-de-blackwhitefaku-rgb.svg'),
+            'lilawhitegrey': url(vars.$LOGO_ROOT + 'wiso/norm-de/wiso-norm-de-lilawhitegrey-rgb.svg'),
+            'lilawhitefaku': url(vars.$LOGO_ROOT + 'wiso/norm-de/wiso-norm-de-lilawhitefaku-rgb.svg'),
+        ),
+    ),
+);

@@ -1,0 +1,22 @@
+@use 'sass:map';
+@use '../variables' as vars;
+
+$fac-agri: (
+    'color': #39842e,
+    'name': (
+        'en': 'Faculty of Agricultural and Nutritional Sciences',
+        'de': 'Agrar- und Ernährungswissenschaftliche Fakultät',
+    ),
+    'logo': (
+        'de': (
+            'blackgreygrey': url(vars.$LOGO_ROOT + 'aef/norm-de/aef-norm-de-blackgreygrey-rgb.svg'),
+            'blackgreyfaku': url(vars.$LOGO_ROOT + 'aef/norm-de/aef-norm-de-blackgreyfaku-rgb.svg'),
+            'lilagreygrey': url(vars.$LOGO_ROOT + 'aef/norm-de/aef-norm-de-lilagreygrey-rgb.svg'),
+            'lilagreyfaku': url(vars.$LOGO_ROOT + 'aef/norm-de/aef-norm-de-lilagreyfaku-rgb.svg'),
+            'blackwhitegrey': url(vars.$LOGO_ROOT + 'aef/norm-de/aef-norm-de-blackwhitegrey-rgb.svg'),
+            'blackwhitefaku': url(vars.$LOGO_ROOT + 'aef/norm-de/aef-norm-de-blackwhitefaku-rgb.svg'),
+            'lilawhitegrey': url(vars.$LOGO_ROOT + 'aef/norm-de/aef-norm-de-lilawhitegrey-rgb.svg'),
+            'lilawhitefaku': url(vars.$LOGO_ROOT + 'aef/norm-de/aef-norm-de-lilawhitefaku-rgb.svg'),
+        ),
+    ),
+);

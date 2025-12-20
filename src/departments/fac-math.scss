@@ -1,0 +1,22 @@
+@use 'sass:map';
+@use '../variables' as vars;
+
+$fac-math: (
+    'color': #f29400,
+    'name': (
+        'en': 'Faculty of Mathematics and Natural Sciences',
+        'de': 'Mathematisch-Naturwissenschaftliche Fakultät',
+    ),
+    'logo': (
+        'de': (
+            'blackgreygrey': url(vars.$LOGO_ROOT + 'mnf/norm-de/mnf-norm-de-blackgreygrey-rgb.svg'),
+            'blackgreyfaku': url(vars.$LOGO_ROOT + 'mnf/norm-de/mnf-norm-de-blackgreyfaku-rgb.svg'),
+            'lilagreygrey': url(vars.$LOGO_ROOT + 'mnf/norm-de/mnf-norm-de-lilagreygrey-rgb.svg'),
+            'lilagreyfaku': url(vars.$LOGO_ROOT + 'mnf/norm-de/mnf-norm-de-lilagreyfaku-rgb.svg'),
+            'blackwhitegrey': url(vars.$LOGO_ROOT + 'mnf/norm-de/mnf-norm-de-blackwhitegrey-rgb.svg'),
+            'blackwhitefaku': url(vars.$LOGO_ROOT + 'mnf/norm-de/mnf-norm-de-blackwhitefaku-rgb.svg'),
+            'lilawhitegrey': url(vars.$LOGO_ROOT + 'mnf/norm-de/mnf-norm-de-lilawhitegrey-rgb.svg'),
+            'lilawhitefaku': url(vars.$LOGO_ROOT + 'mnf/norm-de/mnf-norm-de-lilawhitefaku-rgb.svg'),
+        ),
+    ),
+);
