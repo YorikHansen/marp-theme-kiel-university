@@ -12,8 +12,9 @@ section {
 		$fac-blocks,
 		linear-gradient(to bottom, map.get($cau-main, 'color') 10%, $bg 10%);
 
-	&[lang='en'],
-	&[data-lang='en'] {
+	&[lang='en']:not(.lang-de),
+	&[data-lang='en']:not(.lang-de),
+	&.lang-en {
 		background-image:
 			map.get(map.get(map.get($cau-main, 'logo'), 'en'), 'blackgrey'),
 			$fac-blocks,
