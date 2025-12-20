@@ -5,26 +5,22 @@
 @import "default" all; // The media query part is there to prevent SCSS from handling the default theme
 
 section {
-	&.semi-official {
-		$bg: #ffffff;
-		background-image: map.get(map.get(map.get($cau-main, 'logo'), 'de'), 'blackgrey'), $fac-blocks, linear-gradient(to bottom,
+	$bg: #ffffff;
+	background-image: map.get(map.get(map.get($cau-main, 'logo'), 'de'), 'blackgrey'), $fac-blocks, linear-gradient(to bottom,
+			map.get($cau-main, 'color') 10%,
+			$bg 10%);
+	background-size: auto 11.5%, $fac-block-sizes, 100%;
+	background-position: 95% 4.75%, $fac-block-positions, 0 0;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+
+	&.minimal {
+		background-image: linear-gradient(to bottom,
+				transparent 10%,
+				$bg 10%), map.get(map.get(map.get($cau-main, 'logo'), 'de'), 'blackgrey'), $fac-blocks, linear-gradient(to bottom,
 				map.get($cau-main, 'color') 10%,
 				$bg 10%);
-		background-size: auto 11.5%, $fac-block-sizes, 100%;
-		background-position: 95% 4.75%, $fac-block-positions, 0 0;
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-
-		&.minimal {
-			background-image: linear-gradient(to bottom,
-					transparent 10%,
-					$bg 10%), map.get(map.get(map.get($cau-main, 'logo'), 'de'), 'blackgrey'), $fac-blocks, linear-gradient(to bottom,
-					map.get($cau-main, 'color') 10%,
-					$bg 10%);
-			background-size: 100%, auto 11.5%, $fac-block-sizes, 100%;
-			background-position: 0 0, 95% 4.75%, $fac-block-positions, 0 0;
-		}
-
-		
-	}
+		background-size: 100%, auto 11.5%, $fac-block-sizes, 100%;
+		background-position: 0 0, 95% 4.75%, $fac-block-positions, 0 0;
+	}	
 }
