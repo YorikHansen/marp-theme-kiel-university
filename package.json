@@ -5,7 +5,7 @@
   "description": "Marp themes in the style of Kiel University",
   "repository": "https://github.com/YorikHansen/marp-theme-kiel-university",
   "author": "Yorik Hansen",
-  "license": "All rights reserved",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "build": "sass --pkg-importer=node src/themes:tmp && postcss tmp/*.css --dir dist",
