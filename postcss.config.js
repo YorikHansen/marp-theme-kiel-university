@@ -20,7 +20,6 @@ ${pkg.description}
 @size 4:3 1440px 1080px
 @size 3:2 1620px 1080px
 @size 1:1 1080px 1080px
-@size a4 2480px 3508px
 // TODO: autoscaling for code
 `.trim();
 
