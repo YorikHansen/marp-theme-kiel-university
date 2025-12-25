@@ -1,5 +1,5 @@
 @use 'sass:map';
-@use '../variables' as vars;
+@use '.' as vars;
 
 $fac: (
     'index': 6,

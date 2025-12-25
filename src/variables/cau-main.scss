@@ -1,5 +1,5 @@
 @use 'sass:map';
-@use '../variables' as vars;
+@use '.' as vars;
 
 $cau-main: (
     'color': #9b0a7d,

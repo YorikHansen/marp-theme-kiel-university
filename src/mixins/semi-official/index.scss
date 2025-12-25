@@ -1,10 +1,10 @@
-@use '../mixins/background-helper' as background-helper;
-@use '../mixins/semi-official/bg' as semi-official-bg;
-@use '../mixins/faculty-blocks' as faculty-blocks;
+@use '../background-helper' as background-helper;
+@use 'bg' as semi-official-bg;
+@use '../faculty-blocks' as faculty-blocks;
 @use 'sass:list';
 @use 'sass:map';
 
-@mixin semi-official($faculty) {
+@mixin semi-official($faculty: null) {
 	@import "default" all; // The media query part is there to prevent SCSS from handling the default theme
 
 	section {
