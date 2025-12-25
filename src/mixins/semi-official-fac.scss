@@ -1,0 +1,42 @@
+@use '../mixins/background-helper' as background-helper;
+@use '../mixins/semi-official/bg' as semi-official-bg;
+@use '../mixins/faculty-blocks' as faculty-blocks;
+@use 'sass:list';
+@use 'sass:map';
+
+@mixin semi-official($faculty) {
+	@import "default" all; // The media query part is there to prevent SCSS from handling the default theme
+
+	section {
+		$bg: #ffffff;
+
+		$fac-blocks: faculty-blocks.fac-blocks();
+		$bg-de: semi-official-bg.cau-bg('de');
+		$bg-en: semi-official-bg.cau-bg('en');
+
+		@if $faculty !=null {
+			$fac-blocks: list.append((), faculty-blocks.fac-block($faculty), comma);
+			$bg-de: semi-official-bg.fac-bg($faculty, 'de');
+			$bg-en: semi-official-bg.fac-bg($faculty, 'en');
+		}
+
+		@include background-helper.assemble-background(list.join($fac-blocks,
+				$bg-de,
+				comma));
+
+		&[lang='en']:not(.lang-de),
+		&[data-lang='en']:not(.lang-de),
+		&.lang-en {
+			@include background-helper.assemble-background(list.join($fac-blocks,
+					$bg-en,
+					comma));
+		}
+
+		&.minimal {
+			@include background-helper.assemble-background(list.join((background-helper.bg($image: linear-gradient(to bottom, transparent 10%, $bg 10%),
+							$size: 100%,
+							$position: 0 0),
+					), $bg-de, comma));
+		}
+	}
+}

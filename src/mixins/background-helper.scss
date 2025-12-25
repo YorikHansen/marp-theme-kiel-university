@@ -1,0 +1,50 @@
+@use 'sass:list';
+@use 'sass:map';
+
+@function bg(
+    $attachment: scroll,
+    $clip: border-box,
+    $image: none,
+    $origin: padding-box,
+    $position: 0% 0%,
+    $repeat: repeat,
+    $size: auto auto
+) {
+    @return (
+        'attachment': $attachment,
+        'clip': $clip,
+        'image': $image,
+        'origin': $origin,
+        'position': $position,
+        'repeat': $repeat,
+        'size': $size,
+    );
+}
+
+@mixin assemble-background($backgrounds) {
+    $attachments: ();
+    $clips: ();
+    $images: ();
+    $origins: ();
+    $positions: ();
+    $repeats: ();
+    $sizes: ();
+
+    @each $bg in $backgrounds {
+        $attachments: list.append($attachments, map.get($bg, 'attachment'), comma);
+        $clips: list.append($clips, map.get($bg, 'clip'), comma);
+        $images: list.append($images, map.get($bg, 'image'), comma);
+        $origins: list.append($origins, map.get($bg, 'origin'), comma);
+        $positions: list.append($positions, map.get($bg, 'position'), comma);
+        $repeats: list.append($repeats, map.get($bg, 'repeat'), comma);
+        $sizes: list.append($sizes, map.get($bg, 'size'), comma);
+    }
+
+    background-attachment: $attachments;
+    background-clip: $clips;
+    background-image: $images;
+    background-origin: $origins;
+    background-position: $positions;
+    background-repeat: $repeats;
+    background-size: $sizes;
+}

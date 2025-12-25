@@ -17,7 +17,7 @@ ${pkg.description}
 
 @auto-scaling fittingHeader,math
 @size 16:9 1920px 1080px
-@size 4:3 1600px 1200px
+@size 4:3 1440px 1080px
 @size 3:2 1620px 1080px
 @size 1:1 1080px 1080px
 @size a4 2480px 3508px
@@ -41,7 +41,7 @@ module.exports = (ctx) => ({
     require('postcss-image-inliner')({
       assetPaths: [SOURCE_PATH, TEMP_PATH, LOGO_ROOT],
       b64Svg: true,
-      maxFileSize: 20480, // 20kb
+      maxFileSize: 40960, // 40kib
       strict: true,
     }),
     require('cssnano')({

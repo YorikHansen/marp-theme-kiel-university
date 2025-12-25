@@ -1,0 +1,49 @@
+@use '../variables/cau-main' as *;
+@use '../variables/fac-agri';
+@use '../variables/fac-buis';
+@use '../variables/fac-eng';
+@use '../variables/fac-law';
+@use '../variables/fac-math';
+@use '../variables/fac-med';
+@use '../variables/fac-phil';
+@use '../variables/fac-theo';
+@use 'background-helper' as *;
+@use 'sass:list';
+@use 'sass:map';
+
+@function get-faculties() {
+    @return (fac-theo.$fac,
+        fac-law.$fac,
+        fac-med.$fac,
+        fac-phil.$fac,
+        fac-agri.$fac,
+        fac-math.$fac,
+        fac-buis.$fac,
+        fac-eng.$fac,
+    );
+}
+
+@function fac-block($faculty) {
+    $width: 2.8%;
+    $height: 1.7%;
+    $spacing: 2 * $height;
+
+    $index: map.get($faculty, 'index');
+    $color: map.get($faculty, 'color');
+
+    @return bg($image: linear-gradient(to bottom, $color $height 0),
+        $size: $width $height,
+        $position: right calc(75% - (4 * $height) - (3.5 * $spacing) + (#{$index} * ($height + $spacing))),
+        $repeat: no-repeat);
+}
+
+@function fac-blocks() {
+    $backgrounds: (
+    );
+
+@each $faculty in get-faculties() {
+    $backgrounds: list.append($backgrounds, fac-block($faculty), comma);
+}
+
+@return $backgrounds;
+}

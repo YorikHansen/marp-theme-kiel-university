@@ -1,0 +1,13 @@
+{
+	"markdown.marp.themes": [
+		"dist/semi-official.css",
+		"dist/semi-official-fac-agri.css",
+		"dist/semi-official-fac-buis.css",
+		"dist/semi-official-fac-law.css",
+		"dist/semi-official-fac-eng.css",
+		"dist/semi-official-fac-math.css",
+		"dist/semi-official-fac-phil.css",
+		"dist/semi-official-fac-med.css",
+		"dist/semi-official-fac-theo.css"
+	],
+}

@@ -1,7 +1,8 @@
 @use 'sass:map';
 @use '../variables' as vars;
 
-$fac-agri: (
+$fac: (
+    'index': 4,
     'color': #39842e,
     'name': (
         'en': 'Faculty of Agricultural and Nutritional Sciences',

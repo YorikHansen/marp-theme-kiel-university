@@ -1,0 +1,36 @@
+@use 'sass:map';
+@use '../../variables/cau-main' as *;
+@use '../background-helper' as *;
+
+@function fac-bg($faculty, $lang) {
+    $logo:map.get(map.get($faculty, 'logo'), $lang);
+	@if $logo == null { // Most faculties don't have English logos
+        @debug "No logo found for faculty #{map.get(map.get($faculty, 'name'), $lang)} in language #{$lang}, falling back to German.";
+		$logo: map.get(map.get($faculty, 'logo'), 'de');
+	}
+    $logo: map.get($logo, 'blackgreyfaku');
+
+	@return (
+		bg($image: $logo,
+			$size: 19.5% auto,
+			$position: 95% 5.055%, /* idk why, but the faculty logos have different sizing... */
+			$repeat: no-repeat),
+		bg($image: linear-gradient(to bottom, map.get($faculty, 'color') 10%, transparent 10%),
+			$size: 100%,
+			$position: 0 0),
+	);
+}
+
+@function cau-bg($lang) {
+	$logo: map.get(map.get(map.get($cau-main, 'logo'), $lang), 'blackgrey');
+
+	@return (
+		bg($image: $logo,
+			$size: 19.5% auto,
+			$position: 95% 4.75%,
+			$repeat: no-repeat),
+		bg($image: linear-gradient(to bottom, map.get($cau-main, 'color') 10%, transparent 10%),
+			$size: 100%,
+			$position: 0 0),
+	);
+}

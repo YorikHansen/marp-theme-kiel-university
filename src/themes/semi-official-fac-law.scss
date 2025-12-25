@@ -1,0 +1,4 @@
+@use '../mixins/semi-official-fac' as semi-official-fac;
+@use '../variables/fac-law' as *;
+
+@include semi-official-fac.semi-official($fac);

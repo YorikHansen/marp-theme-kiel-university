@@ -1,7 +1,8 @@
 @use 'sass:map';
 @use '../variables' as vars;
 
-$fac-math: (
+$fac: (
+    'index': 5,
     'color': #f29400,
     'name': (
         'en': 'Faculty of Mathematics and Natural Sciences',
