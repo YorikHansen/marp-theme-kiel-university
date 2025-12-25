@@ -12,8 +12,8 @@
 
 	@return (
 		bg($image: $logo,
-			$size: 19.5% auto,
-			$position: 95% 5.055%, /* idk why, but the faculty logos have different sizing... */
+			$size: auto 17.269%,
+			$position: 95% 5.05%, /* idk why, but the faculty logos have different sizing... */
 			$repeat: no-repeat),
 		bg($image: linear-gradient(to bottom, map.get($faculty, 'color') 10%, transparent 10%),
 			$size: 100%,
@@ -26,8 +26,8 @@
 
 	@return (
 		bg($image: $logo,
-			$size: 19.5% auto,
-			$position: 95% 4.75%,
+			$size: auto 11.5%,
+			$position: 95% 4.73%,
 			$repeat: no-repeat),
 		bg($image: linear-gradient(to bottom, map.get($cau-main, 'color') 10%, transparent 10%),
 			$size: 100%,
